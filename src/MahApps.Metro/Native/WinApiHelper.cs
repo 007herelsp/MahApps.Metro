@@ -33,18 +33,17 @@ namespace MahApps.Metro.Native
             }
 
             var chars = new char[256];
+            Span<char> span = chars;
 
-            fixed (char* pchars = chars)
-            {
+           
                 //PWSTR str = new PWSTR()
-                if (PInvoke.LoadString(user32, id, pchars, chars.Length) == 0)
+                if (PInvoke.LoadString(user32, id, span, span.Length) == 0)
                 {
                     return string.Format("String with id '{0}' could not be found.", id);
                 }
 #pragma warning disable CA1307 // Specify StringComparison for clarity
-                return new string(chars).Replace("&", string.Empty);
+                return new string(span).Replace("&", string.Empty);
 #pragma warning restore CA1307 // Specify StringComparison for clarity
-            }
         }
 
         /// <summary>

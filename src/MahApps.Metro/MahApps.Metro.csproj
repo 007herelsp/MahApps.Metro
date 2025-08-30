@@ -13,13 +13,17 @@
     <PropertyGroup>
         <Authors>Jan Karger, Bastian Schmidt, Dennis Daume, Brendan Forster, Alex Mitchell, Paul Jenkins, Jake Ginnivan</Authors>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageProjectUrl>https://github.com/MahApps/MahApps.Metro</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/007herelsp/MahApps.Metro</PackageProjectUrl>
         <PackageIcon>mahapps.metro.logo.png</PackageIcon>
         <PackageTags>WPF;UI;Metro;Modern;Material;XAML;Toolkit;Library;.NET;OSS;OpenSource</PackageTags>
         <PackageReleaseNotes>https://github.com/MahApps/MahApps.Metro/releases</PackageReleaseNotes>
-        <RepositoryUrl>https://github.com/MahApps/MahApps.Metro.git</RepositoryUrl>
+        <RepositoryUrl>https://github.com/007herelsp/MahApps.Metro</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <GenerateLibraryLayout>true</GenerateLibraryLayout>
+        <TargetFrameworks>net8.0-windows;</TargetFrameworks>
+        <Company>007herelsp</Company>
+        <Product>007herelsp.MahApps.Metro</Product>
+        <PackageId>007heresp.$(AssemblyName)</PackageId>
     </PropertyGroup>
 
     <ItemGroup>
